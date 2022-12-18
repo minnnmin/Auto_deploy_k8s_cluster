@@ -22,5 +22,5 @@ echo "/home/ubuntu/k8s 로 이동하여, 아래 명령을 차례로 실행하세
 echo "1) kubectl create cm cm1 --from-file=index.html "
 echo "2) kubectl apply -f nginx-deploy.yaml "
 echo ""
-echo "배포 후에는 로드밸런서 주소로 접속하여 웹 페이지를 확인하세요"
+echo "배포 후에는 AWS console에서  로드밸런서 주소로 접속하여 웹 페이지를 확인하세요"
 echo ""
