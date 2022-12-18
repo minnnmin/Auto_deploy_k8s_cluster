@@ -14,13 +14,13 @@ Terraform으로 AWS 리소스들을 생성할 수 있도록 루트 사용자 액
     
 2. [액세스 키 만들기] 클릭
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e83ac673-e008-47b1-a6b7-811a036d3cf8/Untitled.png)
+    ![Untitled (1)](https://user-images.githubusercontent.com/38430523/208302537-877cbed2-6a89-49bd-9639-f2aca50dc23f.png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/911fd8da-9798-4497-89b4-41aa6447e867/Untitled.png)
+    ![Untitled (2)](https://user-images.githubusercontent.com/38430523/208302544-8a9cf500-6fc2-4a18-a358-3bf7fa60d02d.png)
     
 3. [.csv 파일 다운로드] 클릭 하여, 액세스 키와 비밀 액세스 키 확인
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3595759f-af6a-4bd8-9e10-7e15f8d31db3/Untitled.png)
+    ![Untitled (3)](https://user-images.githubusercontent.com/38430523/208302556-dacf7240-8ba7-4782-bcd3-581d9314dc02.png)
     
 
 # 실습 준비
@@ -92,7 +92,7 @@ Default Output format [None] : (그냥 Enter)
     
     퍼블릭 키 내용을 아래처럼 그대로 복사합니다. 
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b38037bc-f64b-4dbe-94bb-7d583b30bbef/Untitled.png)
+    ![Untitled (4)](https://user-images.githubusercontent.com/38430523/208302696-bd3e850e-8154-47c1-b21d-30776e4bd4a4.png)
     
 
 1. 프로젝트 폴더 안의 boot로 이동하여 스크립트 실행
@@ -106,11 +106,11 @@ Default Output format [None] : (그냥 Enter)
 
 1. 대략 10-15분 뒤, 클러스터 구축 완료
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8b597b8b-63c6-4025-9ade-2aa6015fc56f/Untitled.png)
+    ![Untitled (5)](https://user-images.githubusercontent.com/38430523/208302699-4bbd19b7-e83e-42c8-b831-4e5378049737.png)
     
 2. 커맨드 창의 안내대로 테스트
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ea074ee-9970-44b2-86ec-93c7b773ac25/Untitled.png)
+    <img width="960" alt="Untitled (6)" src="https://user-images.githubusercontent.com/38430523/208302702-6e4e8628-fc00-4d6a-abb9-3673d62fe8f6.png">
     
     ```
     # master node ssh 접속
@@ -119,7 +119,7 @@ Default Output format [None] : (그냥 Enter)
     # k8s cluster 노드들 상태 확인
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae50252c-8a00-48bb-9d95-25710efa11b1/Untitled.png)
+    ![Untitled (7)](https://user-images.githubusercontent.com/38430523/208302705-32d67cae-27d4-43cb-a7a1-bd266d5d8766.png)
     
     ```
     $ cd k8s/
@@ -127,15 +127,15 @@ Default Output format [None] : (그냥 Enter)
     $ kubectl apply -f nginx-deploy.yaml
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7fe8e687-c74a-42fc-98fa-d797828c0440/Untitled.png)
+    ![Untitled (8)](https://user-images.githubusercontent.com/38430523/208302712-5bde5f3b-fefb-47d0-84f7-7545ea225752.png)
     
     이후 AWS console 접속하여 로드밸런서 주소 확인
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2af20e92-7b4a-4d84-bb7d-bf2429880f3a/Untitled.png)
+    <img width="960" alt="Untitled (9)" src="https://user-images.githubusercontent.com/38430523/208302716-1ad9ec41-f5ee-464a-b4be-3cd3ed02edf2.png">
     
-    브라우저에 해당 주소 입
+    브라우저에 해당 주소 입력
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d326907-1c1b-47d3-b547-4196acab630c/Untitled.png)
+    ![Untitled (10)](https://user-images.githubusercontent.com/38430523/208302719-57eceed6-3446-4055-b143-76351091b4eb.png)
     
 
 <aside>
