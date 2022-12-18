@@ -1,8 +1,11 @@
 # Auto deploy k8s cluster
 
-# 필독
 
-본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터를 구축하는 실습을 다루고 있습니다. 따라서 약간의 비용이 발생할 수 있으며, 실습 후에는 리소스를 안전하게 삭제하시길 바랍니다. 
+# 들어가는 글
+
+본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터()를 구축하는 실습을 다루고 있습니다. 
+따라서 약간의 비용이 발생할 수 있으며, 실습 후에는 리소스를 안전하게 삭제하시길 바랍니다. 
+
 
 # Access Key 생성
 
@@ -53,6 +56,7 @@ $ sudo apt-get -y install terraform
 $ terraform	-v (terraform version 확인)
 ```
 
+
 # AWS Configure
 
 ```
@@ -62,6 +66,7 @@ AWS Secret Access Key [None] : (csv 파일 확인하여 Secret Access Key 입력
 Default region name [None] : ap-northeast-1 (region 지정. 본인은 도쿄 선택)
 Default Output format [None] : (그냥 Enter)
 ```
+
 
 # 실습 파일 다운로드 및 실행
 
@@ -95,7 +100,7 @@ Default Output format [None] : (그냥 Enter)
     ![Untitled (4)](https://user-images.githubusercontent.com/38430523/208302696-bd3e850e-8154-47c1-b21d-30776e4bd4a4.png)
     
 
-1. 프로젝트 폴더 안의 boot로 이동하여 스크립트 실행
+3. 프로젝트 폴더 안의 boot로 이동하여 스크립트 실행
     
     ```
     
@@ -104,11 +109,11 @@ Default Output format [None] : (그냥 Enter)
     ```
     
 
-1. 대략 10-15분 뒤, 클러스터 구축 완료
+4. 대략 10-15분 뒤, 클러스터 구축 완료
     
     ![Untitled (5)](https://user-images.githubusercontent.com/38430523/208302699-4bbd19b7-e83e-42c8-b831-4e5378049737.png)
     
-2. 커맨드 창의 안내대로 테스트
+5. 커맨드 창의 안내대로 테스트
     
     <img width="960" alt="Untitled (6)" src="https://user-images.githubusercontent.com/38430523/208302702-6e4e8628-fc00-4d6a-abb9-3673d62fe8f6.png">
     
@@ -140,15 +145,20 @@ Default Output format [None] : (그냥 Enter)
 
 <aside>
 💡 테스트를 통해 쿠버네티스 클러스터가 정상적으로 작동하는지 확인했다면, 쿠버네티스 클러스터를 마음껏 사용하시면 됩니다 :)
-
 </aside>
+
 
 각 파일에 대한 설명은 아래를 참고하세요
 
 [Auto_deploy_k8s_cluster_on_AWS_파일_설명.pdf](https://drive.google.com/file/d/17b8qeh2chW3_GpJVp1N8NBIM1-7FI40y/view?usp=drivesdk)
+
 
 # 종료
 
 AWS console에서 리소스를 하나하나 지워도 되지만, 실수로 지우지 못한 리소스가 있을 경우 예상치 못한 과금이 발생할 수 있습니다. 따라서 terraform 명령어를 통해 깔끔하게 리소스들을 삭제합니다. 
 
 1. 프로젝트 폴더(auto_deploy_k8s_cluster) 위치에서 아래 명령 실행
+    
+    ```
+    $ terraform destroy -auto-approve
+    ```
