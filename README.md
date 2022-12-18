@@ -98,16 +98,15 @@ Default Output format [None] : (그냥 Enter)
 3. 프로젝트 폴더 안의 boot로 이동하여 스크립트 실행
     
     ```
-    
     $ cd boot/
     $ sh boot.sh
     ```
-    
 
 4. 대략 10-15분 뒤, 클러스터 구축 완료
     
     ![Untitled (5)](https://user-images.githubusercontent.com/38430523/208302699-4bbd19b7-e83e-42c8-b831-4e5378049737.png)
     
+
 5. 커맨드 창의 안내대로 테스트
     
     <img width="960" alt="Untitled (6)" src="https://user-images.githubusercontent.com/38430523/208302702-6e4e8628-fc00-4d6a-abb9-3673d62fe8f6.png">
@@ -138,9 +137,9 @@ Default Output format [None] : (그냥 Enter)
     ![Untitled (10)](https://user-images.githubusercontent.com/38430523/208302719-57eceed6-3446-4055-b143-76351091b4eb.png)
     
 
-<aside>
+
 💡 테스트를 통해 쿠버네티스 클러스터가 정상적으로 작동하는지 확인했다면, 쿠버네티스 클러스터를 마음껏 사용하시면 됩니다 :)
-</aside>
+
 
 
 각 파일에 대한 설명은 아래를 참고하세요
