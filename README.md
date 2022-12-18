@@ -1,6 +1,3 @@
-# Auto deploy k8s cluster
-
-
 # 들어가는 글
 
 본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터()를 구축하는 실습을 다루고 있습니다. 
