@@ -68,9 +68,7 @@ Default Output format [None] : (그냥 Enter)
 # 실습 파일 다운로드 및 실행
 
 1. 깃허브에서 파일 clone
-    
-    https://github.com/minnnmin/auto_deploy_k8s_cluster
-    
+        
     ```
     $ git clone https://github.com/minnnmin/auto_deploy_k8s_cluster.git
     ```
