@@ -1,6 +1,6 @@
 # Auto deploy k8s cluster
 
-# 주의사항
+# 필독
 
 본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터를 구축하는 실습을 다루고 있습니다. 따라서 약간의 비용이 발생할 수 있으며, 실습 후에는 리소스를 안전하게 삭제하시길 바랍니다. 
 
@@ -10,7 +10,7 @@ Terraform으로 AWS 리소스들을 생성할 수 있도록 루트 사용자 액
 
 1. AWS console에 접속하여 우측 상단의 계정 이름 ⇒ 보안 자격 증명 클릭
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a86842ec-f730-491a-b8de-0b4d2308c882/Untitled.png)
+    ![Untitled](https://user-images.githubusercontent.com/38430523/208302535-8486dd32-8607-4fdf-aa6f-438cfa0a2c40.png)
     
 2. [액세스 키 만들기] 클릭
     
