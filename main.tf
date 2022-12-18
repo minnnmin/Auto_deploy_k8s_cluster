@@ -18,7 +18,7 @@ resource "aws_instance" "master" {
   provisioner "local-exec" {
     command = <<-EOT
       sed -i'' -r -e "/master/a${self.private_ip}" utils/private_ips
-      echo "ssh-keyscan ${self.private_ip} >> /home/ubuntu/.ssh/known_hosts" >> utils/4th.sh
+      echo "ssh-keyscan ${self.private_ip} >> /root/.ssh/known_hosts" >> utils/4th.sh
       echo "chmod 600 ~/.ssh/id_rsa" >> boot/configure_infra.sh
       echo "sudo chmod o+w /etc/ssh/ssh_config" >> boot/configure_infra.sh
       echo "Host    ${self.public_ip}" >> boot/ssh-config-local
@@ -40,7 +40,7 @@ resource "aws_instance" "master" {
     type = "ssh"
     host = self.public_ip
     user = "ubuntu"
-    private_key = file("/home/minnmin/.ssh/id_rsa")
+    private_key = file("/root/.ssh/id_rsa")
     timeout = "3m"
   }
   provisioner "remote-exec" {
@@ -51,19 +51,19 @@ resource "aws_instance" "master" {
     ]
   }
   provisioner "file" {
-    source = "/home/minnmin/.ssh/id_rsa"
+    source = "/root/.ssh/id_rsa"
     destination = "/home/ubuntu/.ssh/id_rsa"
   }
   provisioner "file" {
-    source = "/home/minnmin/project/utils/"
+    source = "/root/auto_deploy_k8s_cluster/utils/"
     destination = "/home/ubuntu/utils"
   }
   provisioner "file" {
-    source = "/home/minnmin/project/ansible/"
+    source = "/root/auto_deploy_k8s_cluster/ansible/"
     destination = "/home/ubuntu/ansible"
   }
   provisioner "file" {
-    source = "/home/minnmin/project/k8s/"
+    source = "/root/auto_deploy_k8s_cluster/k8s/"
     destination = "/home/ubuntu/k8s"
   }
 
@@ -90,7 +90,7 @@ resource "aws_instance" "worker1" {
   provisioner "local-exec" {
     command = <<-EOT
       sed -i'' -r -e "/worker/a${self.private_ip}" utils/private_ips
-      echo "ssh-keyscan ${self.private_ip} >> /home/ubuntu/.ssh/known_hosts" >> utils/4th.sh
+      echo "ssh-keyscan ${self.private_ip} >> /root/.ssh/known_hosts" >> utils/4th.sh
     EOT
   }
 }
@@ -115,7 +115,7 @@ resource "aws_instance" "worker2" {
   provisioner "local-exec" {
     command = <<-EOT
       sed -i'' -r -e "/worker/a${self.private_ip}" utils/private_ips
-      echo "ssh-keyscan ${self.private_ip} >> /home/ubuntu/.ssh/known_hosts" >> utils/4th.sh
+      echo "ssh-keyscan ${self.private_ip} >> /root/.ssh/known_hosts" >> utils/4th.sh
     EOT
   }
 }
@@ -140,7 +140,7 @@ resource "aws_instance" "worker3" {
   provisioner "local-exec" {
     command = <<-EOT
       sed -i'' -r -e "/worker/a${self.private_ip}" utils/private_ips
-      echo "ssh-keyscan ${self.private_ip} >> /home/ubuntu/.ssh/known_hosts" >> utils/4th.sh
+      echo "ssh-keyscan ${self.private_ip} >> /root/.ssh/known_hosts" >> utils/4th.sh
     EOT
   }
 }
