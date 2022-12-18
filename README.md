@@ -94,7 +94,6 @@ Default Output format [None] : (그냥 Enter)
     
     ![Untitled (4)](https://user-images.githubusercontent.com/38430523/208302696-bd3e850e-8154-47c1-b21d-30776e4bd4a4.png)
     
-
 3. 프로젝트 폴더 안의 boot로 이동하여 스크립트 실행
     
     ```
@@ -105,7 +104,6 @@ Default Output format [None] : (그냥 Enter)
 4. 대략 10-15분 뒤, 클러스터 구축 완료
     
     ![Untitled (5)](https://user-images.githubusercontent.com/38430523/208302699-4bbd19b7-e83e-42c8-b831-4e5378049737.png)
-    
 
 5. 커맨드 창의 안내대로 테스트
     
@@ -136,15 +134,12 @@ Default Output format [None] : (그냥 Enter)
     
     ![Untitled (10)](https://user-images.githubusercontent.com/38430523/208302719-57eceed6-3446-4055-b143-76351091b4eb.png)
     
-
+    
 
 💡 테스트를 통해 쿠버네티스 클러스터가 정상적으로 작동하는지 확인했다면, 쿠버네티스 클러스터를 마음껏 사용하시면 됩니다 :)
 
-
-
-각 파일에 대한 설명은 아래를 참고하세요
-
-[Auto_deploy_k8s_cluster_on_AWS_파일_설명.pdf](https://drive.google.com/file/d/17b8qeh2chW3_GpJVp1N8NBIM1-7FI40y/view?usp=drivesdk)
+💡 각 파일에 대한 설명은 아래를 참고하세요
+    [Auto_deploy_k8s_cluster_on_AWS_파일_설명.pdf](https://drive.google.com/file/d/17b8qeh2chW3_GpJVp1N8NBIM1-7FI40y/view?usp=drivesdk)
 
 
 # 종료
