@@ -1,17 +1,17 @@
 # 들어가는 글
 
-본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터를 구축하는 실습을 다루고 있습니다. 
+본 문서는 terraform과 ansible을 사용하여 AWS 상에 쿠버네티스 클러스터를 구축하는 실습을 다루고 있습니다. </br>
 따라서 약간의 비용이 발생할 수 있으며, 실습 후에는 리소스를 안전하게 삭제하시길 바랍니다. 
 
 
 # Access Key 생성
 
-Terraform으로 AWS 리소스들을 생성할 수 있도록 AWS 사용자 정보를 지정해주어야 합니다.
+Terraform으로 AWS 리소스들을 생성할 수 있도록 AWS 사용자 정보를 지정해주어야 합니다. </br>
 
-실습에서는 편의를 위해 루트 사용자 액세스 키를 사용할 것이며, 
-별도의 IAM 사용자로 진행하려면 AmazonEC2FullAccess, AmazonVPCFullAccess 두 가지의 정책을 부여하면 됩니다. 
+실습에서는 편의를 위해 루트 사용자 액세스 키를 사용할 것이며, </br>
+별도의 IAM 사용자로 진행하려면 `AmazonEC2FullAccess`, `AmazonVPCFullAccess` 두 가지의 정책을 부여하면 됩니다.
 
-1. AWS console에 접속하여 우측 상단의 계정 이름 ⇒ 보안 자격 증명 클릭
+1. AWS console에 접속하여 우측 상단의 계정 이름 ⇒ [보안 자격 증명] 클릭
     
     ![Untitled](https://user-images.githubusercontent.com/38430523/208302535-8486dd32-8607-4fdf-aa6f-438cfa0a2c40.png)
     
